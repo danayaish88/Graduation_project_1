@@ -1,4 +1,6 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:sign_in_test/Screens/Home/home_screen.dart';
 import 'package:sign_in_test/components/rounded_button.dart';
 import 'package:sign_in_test/components/rounded_passwordfield.dart';
 import 'package:sign_in_test/components/rounded_textField.dart';
@@ -74,6 +76,11 @@ class _LoginFormState extends State<LoginForm> {
       The user has registered with an email address of '${_loginObject['email']}' 
       and a password of '${_loginObject['password']}'
       """);
+      Navigator.push(context, MaterialPageRoute(
+          builder: (context){
+            return HomeScreen();
+          }
+      ));
     }
   }
 

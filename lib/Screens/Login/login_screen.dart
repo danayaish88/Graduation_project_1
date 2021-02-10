@@ -3,9 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sign_in_test/Screens/SignUp/sign_up_screen.dart';
 import 'package:sign_in_test/Screens/Login/login_form.dart';
-import 'package:sign_in_test/components/rounded_button.dart';
-import 'package:sign_in_test/components/rounded_passwordfield.dart';
-import 'package:sign_in_test/components/rounded_textField.dart';
 import 'package:sign_in_test/components/already_have_an_account_check.dart';
 
 class LoginScreen extends StatelessWidget {
