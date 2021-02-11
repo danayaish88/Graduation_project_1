@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:sign_in_test/Screens/Hotels/list_screen.dart';
 
 import '../../constants.dart';
 
@@ -7,11 +8,11 @@ class Categories extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List <Map<String, dynamic>> categories = [
-      {"icon" : Icons.hotel, "text": "Hotels"},
-      {"icon" : Icons.store_mall_directory, "text": "Super Markets"},
-      {"icon" : Icons.local_mall, "text": "Malls"},
-      {"icon" : Icons.attach_money, "text": "Currency Exch."},
-      {"icon" : Icons.local_hospital, "text": "Hospitals"},
+      {"icon" : Icons.hotel, "text": "Hotels", "route": ListScreen(label: "Hotels")},
+      {"icon" : Icons.store_mall_directory, "text": "Super Markets", "route": ListScreen(label: "Super Markets",)},
+      {"icon" : Icons.local_mall, "text": "Malls", "route": ListScreen(label: "Malls",)},
+      {"icon" : Icons.attach_money, "text": "Currency Exch.", "route": ListScreen(label: "Currency Exchange",)},
+      {"icon" : Icons.local_hospital, "text": "Hospitals", "route": ListScreen(label: "Hospitals",)},
     ];
 
     return Row(
@@ -23,7 +24,13 @@ class Categories extends StatelessWidget {
             CategorieCard(
               icon: categories[index]["icon"],
               label: categories[index]["text"],
-              press: (){},
+              press: (){
+                Navigator.push(context, MaterialPageRoute(
+                    builder: (context){
+                      return categories[index]["route"];
+                    }
+                ));
+              },
             ),
         )
       ],
