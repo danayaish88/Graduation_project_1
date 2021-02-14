@@ -21,7 +21,7 @@ class PlacesCards extends StatelessWidget {
           height: 200,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
-            color: kPrimaryLightColor,
+            color: Colors.white12,
           ),
           child: SingleChildScrollView(
             child: Column(

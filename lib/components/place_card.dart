@@ -7,7 +7,7 @@ class PlaceCard extends StatelessWidget {
     return Container(
       margin: EdgeInsets.only(bottom: 20),
       decoration: BoxDecoration(
-          color: Colors.black12,
+          color: Colors.white12,
           borderRadius: BorderRadius.circular(20)
       ),
       child: Row(
