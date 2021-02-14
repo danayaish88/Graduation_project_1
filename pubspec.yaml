@@ -25,6 +25,13 @@ dependencies:
   cupertino_icons: ^0.1.2
   flutter_svg: ^0.18.0
   google_fonts: ^1.0.0
+  flutter_swiper: ^1.1.6
+  sliding_up_panel: ^1.0.2
+  flutter_rating_bar: ^3.2.0+1
+  carousel_pro: ^1.0.0
+  geolocator: ^6.2.0
+  location: ^3.0.0
+  google_maps_flutter: ^0.5.30
 
 dev_dependencies:
   flutter_test:
